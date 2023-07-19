@@ -1,0 +1,7 @@
+{
+    "autoDocstring.docstringFormat": "numpy-notypes",
+    "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "Default Dark+",
+    "search.useParentIgnoreFiles": true,
+    "search.useGlobalIgnoreFiles": true
+}

@@ -1,0 +1,9 @@
+{
+    // currently not supported for jedi, but may be desirable
+    "python.linting.ignorePatterns":[
+        "**/site-packages/**/*.py",
+        ".vscode/*.py",
+        // linting notebooks can be very slow
+        "**/*.ipynb"
+    ],
+}

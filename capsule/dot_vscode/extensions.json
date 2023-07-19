@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-python.isort",
+        "kevinrose.vsc-python-indent",
+        "njpwerner.autodocstring",
+        "ms-pyright.pyright",
+    ]
+}
