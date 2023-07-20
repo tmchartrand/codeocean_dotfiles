@@ -4,5 +4,12 @@
     "window.autoDetectColorScheme": true,
     "workbench.colorTheme": "Default Dark+",
     "search.useParentIgnoreFiles": true,
-    "search.useGlobalIgnoreFiles": true
+    "search.useGlobalIgnoreFiles": true,
+    "jupyter.askForKernelRestart": false,
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportGeneralTypeIssues": "warning"
+    },
+    "files.exclude": {
+        "**/__pycache__": true
+    }
 }
