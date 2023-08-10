@@ -1,10 +1,10 @@
 {
-    "jupyter.disableJupyterAutoStart": true,
-    "autoDocstring.docstringFormat": "numpy-notypes",
     "window.autoDetectColorScheme": true,
     "workbench.colorTheme": "Default Dark+",
     "search.useParentIgnoreFiles": true,
     "search.useGlobalIgnoreFiles": true,
+    "autoDocstring.docstringFormat": "numpy-notypes",
+    "jupyter.disableJupyterAutoStart": true,
     "jupyter.askForKernelRestart": false,
     "python.analysis.diagnosticSeverityOverrides": {
         "reportGeneralTypeIssues": "warning"
