@@ -11,5 +11,8 @@
     },
     "files.exclude": {
         "**/__pycache__": true
-    }
+    },
+    "python.languageServer": "Jedi",
+    "git.autofetch": true,
+    "workbench.startupEditor": "none"
 }
