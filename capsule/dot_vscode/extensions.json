@@ -5,7 +5,6 @@
         "ms-python.isort",
         "kevinrose.vsc-python-indent",
         "njpwerner.autodocstring",
-        "ms-pyright.pyright",
         "mhutchie.git-graph"
     ]
 }

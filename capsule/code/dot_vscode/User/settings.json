@@ -1,18 +1,28 @@
 {
     "window.autoDetectColorScheme": true,
-    "workbench.colorTheme": "Default Dark+",
     "search.useParentIgnoreFiles": true,
     "search.useGlobalIgnoreFiles": true,
     "autoDocstring.docstringFormat": "numpy-notypes",
     "jupyter.disableJupyterAutoStart": true,
     "jupyter.askForKernelRestart": false,
-    "python.analysis.diagnosticSeverityOverrides": {
-        "reportGeneralTypeIssues": "warning"
-    },
     "files.exclude": {
         "**/__pycache__": true
     },
     "python.languageServer": "Jedi",
     "git.autofetch": true,
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "notebook.output.textLineLimit": 100,
+    "workbench.colorTheme": "Default Dark+",
+    "explorer.confirmDragAndDrop": false,
+    // needed for glibc issues caused by pyarrow
+    "terminal.integrated.env.linux": {
+        "LD_LIBRARY_PATH": "/opt/conda/lib/"
+    },
+    "jupyter.runStartupCommands": [
+
+        // "%load_ext autoreload",
+        // "%autoreload 2"
+    ],
+    "editor.showFoldingControls": "always",
+    "editor.foldingStrategy": "indentation",
 }
