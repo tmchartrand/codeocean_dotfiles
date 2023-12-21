@@ -1,5 +1,0 @@
-[user]
-	name = tmchartrand
-	email = tom.chartrand@alleninstitute.org
-[credential]
-	helper = "!f() { echo username=tmchartrand; echo \"password=$GIT_ACCESS_TOKEN\"; };f"
