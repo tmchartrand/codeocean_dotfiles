@@ -1,3 +1,4 @@
 {
-    "jupyter.experiments.enabled": false
+    "jupyter.experiments.enabled": false,
+    "jupyter.logging.level": "verbose"
 }
