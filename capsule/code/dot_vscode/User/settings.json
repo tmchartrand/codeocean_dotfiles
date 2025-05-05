@@ -1,5 +1,4 @@
 {
-    "window.autoDetectColorScheme": true,
     "search.useParentIgnoreFiles": true,
     "search.useGlobalIgnoreFiles": true,
     "autoDocstring.docstringFormat": "numpy-notypes",
@@ -10,7 +9,6 @@
         "**/.vscode": true,
         "**/*.egg-info": true
     },
-    "python.languageServer": "Jedi",
     "git.autofetch": true,
     "workbench.startupEditor": "none",
     "explorer.confirmDragAndDrop": false,
@@ -19,16 +17,23 @@
         "LD_LIBRARY_PATH": "/opt/conda/lib/"
     },
     "jupyter.runStartupCommands": [
-
-        // "%load_ext autoreload",
-        // "%autoreload 2"
+        "%load_ext autoreload",
+        "%autoreload 2"
     ],
     "editor.showFoldingControls": "always",
-    "editor.foldingStrategy": "indentation",
     "files.watcherExclude": {
-        "/root/capsule/.git/**": true,
-        "/root/capsule/code/.vscode/**": true,
-        "/root/capsule/data/**": true
+        "**/__pycache__/**": true,
+        "**/.git/**": true,
+        "**/.git/objects/**": false,
+        "**/.git/subtree-cache/**": false,
+        "**/.vscode/**": true,
+        "**/*.egg-info/**": true,
+        "**/*.ipynb": true,
+        "**/*.zarr/**": true,
+        "**/data/**": true,
+        "**/results/**": true,
+        "**/scratch/**": true,
+        "/opt/**": true
     },
     "git.useIntegratedAskPass": false,
     "github.gitAuthentication": false,
@@ -51,14 +56,69 @@
     "files.autoSaveDelay": 10000,
     "files.autoSave": "onFocusChange",
     "notebook.scrolling.revealNextCellOnExecute": "firstLine",
-    "notebook.diff.ignoreMetadata": true,
     "notebook.stickyScroll.enabled": true,
-    "notebook.diff.ignoreOutputs": true,
     "remote.autoForwardPortsSource": "hybrid",
     "editor.quickSuggestionsDelay": 20,
     "python.autoComplete.extraPaths": [
-        "/capsule/code/"
+        "/root/capsule/code/"
     ],
     "remote.forwardOnOpen": false,
-    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "gitlens.graph.layout": "editor",
+    "gitlens.graph.minimap.enabled": false,
+    "gitlens.plusFeatures.enabled": false,
+    "gitlens.virtualRepositories.enabled": false,
+    "gitlens.advanced.fileHistoryShowAllBranches": true,
+    "gitlens.changes.toggleMode": "window",
+    "gitlens.mode.active": "zen",
+    "gitlens.hovers.enabled": false,
+    "python.analysis.extraPaths": [
+        "/root/capsule/code/"
+    ],
+    "notebook.experimental.generate": true,
+    "notebook.experimental.cellChat": true,
+    "gitlens.graph.dimMergeCommits": true,
+    "ruff.codeAction.disableRuleComment": {
+        "enable": false
+    },
+    "debugpy.debugJustMyCode": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    "notebook.diff.ignoreMetadata": true,
+    "pylint.cwd": "${fileDirname}",
+    "pylint.args": [
+        "--disable=W0511"
+    ],
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "notebook.experimental.remoteSave": true,
+    "github.copilot.advanced": {
+        
+    },
+    "outline.showModules": false,
+    "editor.stickyScroll.defaultModel": "foldingProviderModel",
+    "git.autoStash": true,
+    "editor.foldingStrategy": "indentation",
+    "git.suggestSmartCommit": false,
+    "workbench.editorLargeFileConfirmation": 30,
+    "explorer.autoReveal": "focusNoScroll",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "liveshare.notebooks.allowGuestExecuteCells": true,
+    "basedpyright.analysis.inlayHints.variableTypes": false,
+    "basedpyright.analysis.inlayHints.functionReturnTypes": false,
+    "problems.decorations.enabled": false,
+    "basedpyright.analysis.exclude": [
+        "results/**",
+        "data/**",
+        "scratch/**"
+    ],
+    "basedpyright.analysis.typeCheckingMode": "off",
+    "editor.rulers": [
+        90
+    ],
 }
