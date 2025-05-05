@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "/src"
+		},
+		{
+			"path": "/root/capsule"
+		},
+		{
+			"path": "/root/.local/share/chezmoi"
+		}
+	],
+	"settings": {
+		"python.languageServer": "None"
+	}
+}
